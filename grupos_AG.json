@@ -1,0 +1,32 @@
+[
+  {
+    "nome_grupo": "I",
+    "descricao": "Atividades Formativas de Ensino",
+    "max_horas": 100
+  },
+  {
+    "nome_grupo": "II",
+    "descricao": "Atividades Formativas de Pesquisa e Inovação",
+    "max_horas": 100
+  },
+  {
+    "nome_grupo": "III",
+    "descricao": "Atividades Formativas de Extensão e Cultura",
+    "max_horas": 100
+  },
+  {
+    "nome_grupo": "IV",
+    "descricao": "Atividades Formativas voltadas à Profissionalização",
+    "max_horas": 100
+  },
+  {
+    "nome_grupo": "V",
+    "descricao": "Atividades Formativas de Representação",
+    "max_horas": 40
+  },
+  {
+    "nome_grupo": "VI",
+    "descricao": "Eventos Acadêmico-Científicos",
+    "max_horas": 100
+  }
+]

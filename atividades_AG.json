@@ -1,0 +1,184 @@
+[
+  {
+    "nome_atividade": "Aprovação em disciplinas eletivas de graduação ou pós-graduação",
+    "grupo": "I",
+    "descricao": "Disciplinas eletivas ofertadas pela UFPR que não constam na grade oficial do curso ou disciplinas isoladas cursadas em outra IES.",
+    "max_horas": 40,
+    "documento_comprobatorio": "Histórico escolar ou documento assinado emitido pela instituição em que o aluno cursou a disciplina"
+  },
+  {
+    "nome_atividade": "Participação em grupos de estudos temáticos, monitoria, PET ou projetos vinculados à licenciatura",
+    "grupo": "I",
+    "descricao": "Contempla aluno bolsista ou voluntário.",
+    "max_horas": 60,
+    "documento_comprobatorio": "Declaração da coordenação do grupo constando a carga horária"
+  },
+  {
+    "nome_atividade": "Cursos de idiomas, de informática ou cursos de nível técnico (ligados ou não à UFPR)",
+    "grupo": "I",
+    "descricao": "Cursos de capacitação técnica e profissional.",
+    "max_horas": 40,
+    "documento_comprobatorio": "Certificado emitido pela instituição ou escola, constando a carga horária"
+  },
+  {
+    "nome_atividade": "Atividades de ensino à distância",
+    "grupo": "I",
+    "descricao": "Cursos online e atividades de educação à distância.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado emitido pela instituição ou escola, constando a carga horária"
+  },
+  {
+    "nome_atividade": "Cursos de extensão, minicursos, palestras, oficinas didáticas e afins (fora de eventos científicos)",
+    "grupo": "I",
+    "descricao": "Atividades formativas complementares de ensino.",
+    "max_horas": 40,
+    "documento_comprobatorio": "Certificado emitido pela instituição ou responsável, constando a carga horária"
+  },
+  {
+    "nome_atividade": "Intercâmbios em outras IFES ou no exterior",
+    "grupo": "I",
+    "descricao": "Programas de intercâmbio acadêmico.",
+    "max_horas": 60,
+    "documento_comprobatorio": "Certificado emitido pela instituição contendo a carga horária"
+  },
+  {
+    "nome_atividade": "Participação em reuniões de Orientação Acadêmica",
+    "grupo": "I",
+    "descricao": "Válido apenas para atividades realizadas a partir de 2017.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado pela Coordenação de Curso"
+  },
+  {
+    "nome_atividade": "Atividades de pesquisa ou iniciação científica na UFPR ou em entidade de pesquisa reconhecida (Brasil ou exterior)",
+    "grupo": "II",
+    "descricao": "Contempla aluno bolsista ou voluntário.",
+    "max_horas": 100,
+    "documento_comprobatorio": "Certificado constando a carga horária total"
+  },
+  {
+    "nome_atividade": "Atividades de extensão vinculadas à UFPR (programas, projetos, cursos, eventos ou prestação de serviço)",
+    "grupo": "III",
+    "descricao": "Programas/projetos contemplam bolsistas ou voluntários; nos cursos o aluno deve atuar como ministrante; na prestação de serviços atua como prestador.",
+    "max_horas": 80,
+    "documento_comprobatorio": "Certificado/declaração do professor-orientador/coordenador (registrada na PROEC) e plano ou relatório das atividades"
+  },
+  {
+    "nome_atividade": "Participação em programas de voluntariado não vinculados à UFPR (atividades comunitárias, beneficentes, CIPAS, brigadas de incêndio, etc.)",
+    "grupo": "III",
+    "descricao": "Conforme Lei nº 608/98 – trabalho voluntário não remunerado a entidades públicas ou privadas sem fins lucrativos.",
+    "max_horas": 40,
+    "documento_comprobatorio": "Certificado ou declaração do responsável na entidade/instituição"
+  },
+  {
+    "nome_atividade": "Atividades artísticas e culturais em grupos da UFPR",
+    "grupo": "III",
+    "descricao": "Participação em atividades culturais da universidade.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado ou declaração da Coordenadoria de Cultura da UFPR"
+  },
+  {
+    "nome_atividade": "Visitas técnicas extracurriculares",
+    "grupo": "III",
+    "descricao": "4 h por visita (máximo 20 h).",
+    "max_horas": 20,
+    "documento_comprobatorio": "Declaração do professor responsável pela visita, constando a carga horária"
+  },
+  {
+    "nome_atividade": "Participação no programa de Bolsa SiBi",
+    "grupo": "III",
+    "descricao": "Atividades no Sistema de Bibliotecas da UFPR.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado ou declaração"
+  },
+  {
+    "nome_atividade": "Estágio não obrigatório na UFPR",
+    "grupo": "IV",
+    "descricao": "Inclui atividades do Programa de Voluntariado Acadêmico (PVA).",
+    "max_horas": 60,
+    "documento_comprobatorio": "Certificado da PROGRAD ou declaração do supervisor/orientador constando a carga horária total"
+  },
+  {
+    "nome_atividade": "Estágio não obrigatório fora da UFPR",
+    "grupo": "IV",
+    "descricao": "Estágio em empresas e instituições externas.",
+    "max_horas": 60,
+    "documento_comprobatorio": "Certificado da PROGRAD ou declaração do supervisor/orientador constando a carga horária total"
+  },
+  {
+    "nome_atividade": "Participação em Empresa Júnior reconhecida formalmente pela UFPR",
+    "grupo": "IV",
+    "descricao": "Validadas até 2 h por mês de exercício.",
+    "max_horas": 30,
+    "documento_comprobatorio": "Declaração do professor responsável pela Empresa Júnior"
+  },
+  {
+    "nome_atividade": "Participação em desafios ou competições técnicas, científicas ou culturais",
+    "grupo": "IV",
+    "descricao": "Quando não constar carga horária: 1 h por participação.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado emitido pela entidade organizadora do evento"
+  },
+  {
+    "nome_atividade": "Representação estudantil em órgãos de deliberação e entidades estudantis (Departamentos, Conselhos, Colegiado, CA, UNE, DCE, etc.)",
+    "grupo": "V",
+    "descricao": "Validadas até 2 h por mês.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Declaração da entidade de representação"
+  },
+  {
+    "nome_atividade": "Representação do curso ou da UFPR em eventos municipais, estaduais ou nacionais",
+    "grupo": "V",
+    "descricao": "Representação oficial da instituição.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Declaração da entidade de representação ou do responsável pelo evento, incluindo carga horária"
+  },
+  {
+    "nome_atividade": "Atividades desportivas do curso/UFPR no âmbito institucional, estadual ou nacional (coletivas ou individuais)",
+    "grupo": "V",
+    "descricao": "Participação em competições esportivas representando a UFPR.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado ou declaração da instância representada, incluindo carga horária"
+  },
+  {
+    "nome_atividade": "Participação em seminários, jornadas, fóruns, encontros, congressos, simpósios, cursos, oficinas, palestras, festivais e afins (eventos científicos)",
+    "grupo": "VI",
+    "descricao": "Sem comprovação de carga horária: 4 h por dia de atividade.",
+    "max_horas": 40,
+    "documento_comprobatorio": "Certificado do evento com carga horária ou programa anexado"
+  },
+  {
+    "nome_atividade": "Publicação de artigo, livro, capítulo, resumo, resenha ou material didático",
+    "grupo": "VI",
+    "descricao": "Livro com ISBN/ISSN: 100 h; artigo indexado/capítulo: 50 h; publicação não indexada ou resumo: 5 h.",
+    "max_horas": 100,
+    "documento_comprobatorio": "Cópia da publicação com referência"
+  },
+  {
+    "nome_atividade": "Apresentação de trabalho científico (pôster ou apresentação oral)",
+    "grupo": "VI",
+    "descricao": "Pôster: até 3 h cada; apresentação oral: até 5 h cada.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Certificado de apresentação"
+  },
+  {
+    "nome_atividade": "Organização, coordenação ou monitoria de eventos científicos (seminários, congressos, cursos, oficinas, etc.)",
+    "grupo": "VI",
+    "descricao": "Sem comprovação de carga horária: 5 h por dia de evento.",
+    "max_horas": 40,
+    "documento_comprobatorio": "Declaração da comissão organizadora ou instância equivalente"
+  },
+  {
+    "nome_atividade": "Participação como palestrante, conferencista, integrante de mesa-redonda ou ministrante de minicurso em evento científico",
+    "grupo": "VI",
+    "descricao": "Sem comprovação de carga horária: 1 h por dia de evento.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Declaração da comissão organizadora ou instância equivalente"
+  },
+  {
+    "nome_atividade": "Participação em diretoria de grupo de estudo temático",
+    "grupo": "VI",
+    "descricao": "Validadas 10 h por semestre.",
+    "max_horas": 20,
+    "documento_comprobatorio": "Declaração do professor coordenador do grupo"
+  }
+] 
