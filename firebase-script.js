@@ -10,7 +10,8 @@ import {
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword, 
     signOut, 
-    onAuthStateChanged 
+    onAuthStateChanged, 
+    sendEmailVerification
 } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
 import { 
     getFirestore, 
@@ -282,8 +283,8 @@ function setupEventListeners() {
 async function handleLogin(e) {
     e.preventDefault();
     
-    const email = document.getElementById('email').value.trim();
-    const password = document.getElementById('password').value;
+    const email = document.getElementById('login-email').value.trim();
+    const password = document.getElementById('login-password').value;
     
     try {
         await signInWithEmailAndPassword(auth, email, password);
@@ -317,6 +318,9 @@ async function handleRegister(e) {
             type: userType,
             createdAt: new Date().toISOString()
         });
+        
+        // Enviar e-mail de verificação
+        await sendEmailVerification(user);
         
         showAlert('Conta criada com sucesso!', 'success');
         showLogin();
