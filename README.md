@@ -1,154 +1,117 @@
-# Sistema de Validação de Certificados - Atividades Formativas
+# 🎓 Sistema de Validação de Certificados - Atividades Formativas
 
-Sistema web para upload e validação de certificados de atividades formativas com interface para alunos e professores.
+## 🆓 Versão 100% Gratuita - GitHub Pages + Firebase
 
-## 📋 Funcionalidades
+Sistema completo para validação de certificados de atividades formativas, totalmente gratuito usando GitHub Pages e Firebase (sem Storage).
 
-### Para Alunos:
-- ✅ Login simples com nome/email
-- ✅ Upload de certificados (.pdf, .jpg, .png)
-- ✅ Seleção de atividade vinculada ao certificado
-- ✅ Solicitação de horas para validação
-- ✅ Acompanhamento do status dos certificados
-- ✅ Visualização do progresso por grupos de atividades
-- ✅ Exclusão de certificados pendentes
+### ✨ **Funcionalidades Principais**
 
-### Para Professores:
-- ✅ Interface de validação de certificados
-- ✅ Aprovação/rejeição com comentários
-- ✅ Definição de horas validadas
-- ✅ Visualização dos arquivos enviados
-- ✅ Controle de limites por grupo de atividades
+#### 👨‍🎓 **Para Alunos:**
+- 🔐 **Login seguro** com e-mail/senha
+- 📁 **Upload de certificados** (PDF, JPG, PNG até 800KB)
+- 📊 **Progresso visual** por grupos de atividades
+- ⏱️ **Controle de horas** com validação automática
+- 📱 **Interface responsiva** para mobile
 
-## 🚀 Como Usar
+#### 👨‍🏫 **Para Professores:**
+- ✅ **Validação de certificados** em tempo real
+- 💬 **Comentários** para aprovação/rejeição
+- 📈 **Relatórios completos** de todos os alunos
+- 📊 **Acompanhamento individual** do progresso
+- 📄 **Exportação em CSV**
 
-### 1. Acessar o Sistema
-1. Abra o arquivo `index.html` no navegador
-2. Escolha o tipo de usuário (Aluno ou Professor)
-3. Digite seu nome ou email
-4. Clique em "Entrar"
-
-### 2. Área do Aluno
-
-#### Enviando um Certificado:
-1. Selecione o arquivo do certificado
-2. Digite uma descrição
-3. Escolha a atividade correspondente
-4. Informe as horas que deseja validar
-5. Clique em "Enviar Certificado"
-
-#### Acompanhando o Progresso:
-- Na parte superior, veja o progresso por grupos
-- Na lista de certificados, acompanhe o status:
-  - **Pendente**: Aguardando validação
-  - **Aprovado**: Certificado aprovado com horas validadas
-  - **Rejeitado**: Certificado rejeitado com comentário
-
-### 3. Área do Professor
-
-#### Validando Certificados:
-1. Visualize a lista de certificados pendentes
-2. Clique em "Ver Certificado" para examinar o arquivo
-3. Adicione um comentário (obrigatório para rejeição)
-4. Defina as horas a validar (para aprovação)
-5. Clique em "Aprovar" ou "Rejeitar"
-
-## 📊 Grupos de Atividades
-
-O sistema trabalha com 6 grupos de atividades formativas:
-
-- **Grupo I**: Atividades Formativas de Ensino (max: 100h)
-- **Grupo II**: Atividades Formativas de Pesquisa e Inovação (max: 100h)
-- **Grupo III**: Atividades Formativas de Extensão e Cultura (max: 100h)
-- **Grupo IV**: Atividades Formativas voltadas à Profissionalização (max: 100h)
-- **Grupo V**: Atividades Formativas de Representação (max: 40h)
-- **Grupo VI**: Eventos Acadêmico-Científicos (max: 100h)
-
-## 🔧 Validações Implementadas
-
-### Aluno:
-- Limite máximo de horas por atividade
-- Limite máximo de horas por grupo
-- Validação de arquivos (PDF, JPG, PNG)
-- Campos obrigatórios
-
-### Professor:
-- Horas validadas não podem exceder horas solicitadas
-- Comentário obrigatório para rejeição
-- Verificação de limites de grupo antes da aprovação
-
-## 💾 Persistência de Dados
-
-O sistema utiliza `localStorage` para armazenar:
-- Dados do usuário atual
-- Lista de certificados enviados
-- Status de validação
-
-**Nota**: Os dados são mantidos apenas no navegador local. Para uso em produção, seria necessário implementar um backend.
-
-## 📁 Estrutura de Arquivos
+### 🏗️ **Arquitetura**
 
 ```
-/
-├── index.html          # Página principal
-├── style.css           # Estilos do sistema
-├── script.js           # Lógica JavaScript
-├── atividades_AG.json  # Configuração das atividades
-├── grupos_AG.json      # Configuração dos grupos
-└── README.md           # Este arquivo
+GitHub Pages (Frontend)    +    Firebase (Backend)
+├── HTML/CSS/JS            ├── Authentication (gratuito)
+├── Hosting gratuito       ├── Firestore (gratuito)
+└── Deploy automático      └── Base64 para arquivos
 ```
 
-## 🎨 Design e Interface
+### 📁 **Arquivos do Projeto**
 
-- Interface responsiva com Bootstrap 5
-- Design moderno com gradientes e animações
-- Ícones Font Awesome
-- Alertas informativos
-- Modal para visualização de certificados
+#### **🔧 Sistema:**
+- `index.html` - Interface principal
+- `style.css` - Estilos responsivos
+- `firebase-script.js` - Lógica completa (sem Storage)
+- `firebase-config.js` - Configuração Firebase
 
-## 🔍 Recursos Adicionais
+#### **📊 Dados:**
+- `atividades_AG.json` - 25 atividades configuradas
+- `grupos_AG.json` - 6 grupos com limites de horas
+- `firestore.rules` - Regras de segurança
 
-### Visualização de Certificados:
-- PDFs são exibidos em iframe
-- Imagens são mostradas diretamente
-- Download de arquivos disponível
+#### **📖 Documentação:**
+- `SOLUCAO_100_GRATUITA.md` - Guia completo da solução
+- `GUIA_RAPIDO_GITHUB.md` - Deploy em 20 minutos
 
-### Progresso Visual:
-- Barras de progresso por grupo
-- Percentual de conclusão
-- Cores indicativas de status
+### 🚀 **Deploy Rápido (20 minutos)**
 
-### Responsividade:
-- Funciona em desktop, tablet e mobile
-- Layout adaptativo
-- Menus colapsáveis
+#### **1. Configure Firebase (10 min)**
+1. Acesse: https://console.firebase.google.com/
+2. Criar projeto → Ativar Authentication + Firestore
+3. Copiar configuração → Editar `firebase-config.js`
 
-## 🚨 Limitações Atuais
+#### **2. GitHub Pages (5 min)**
+1. Criar repositório público no GitHub
+2. Upload de todos os arquivos
+3. Settings → Pages → Ativar
 
-1. **Sem autenticação real**: Login apenas com nome
-2. **Dados locais**: Usa localStorage (não compartilhado entre dispositivos)
-3. **Sem backup**: Dados podem ser perdidos se localStorage for limpo
-4. **Arquivos em base64**: Pode consumir muita memória com arquivos grandes
+#### **3. Configurar Segurança (5 min)**
+1. Firebase → Authentication → Adicionar domínio GitHub
+2. Firestore → Rules → Copiar conteúdo do `firestore.rules`
 
-## 🔮 Melhorias Futuras
+### ✅ **Vantagens da Versão Gratuita**
 
-- [ ] Autenticação com senha
-- [ ] Backend para persistência real
-- [ ] Exportação de relatórios em CSV
-- [ ] Histórico completo para professores
-- [ ] Notificações por email
-- [ ] Sistema de permissões mais granular
-- [ ] Compressão de arquivos
-- [ ] Backup automático dos dados
+- 🆓 **Totalmente gratuito** para sempre
+- 🌐 **URL profissional**: `seuusuario.github.io/projeto`
+- 🔒 **Segurança empresarial** com Firebase Auth
+- 📱 **Mobile first** e responsivo
+- ⚡ **Deploy automático** com git push
+- 📊 **Banco na nuvem** com Firestore
+- 🔄 **Tempo real** - mudanças instantâneas
 
-## 📞 Suporte
+### 📏 **Especificações Técnicas**
 
-Para dúvidas ou problemas:
-1. Verifique se os arquivos JSON estão corretos
-2. Confirme que está acessando via servidor web (não file://)
-3. Verifique o console do navegador para erros
-4. Teste com arquivos pequenos primeiro
+#### **Limites (mais que suficientes):**
+- **Arquivo**: Máximo 800KB (PDF/JPG/PNG)
+- **Compressão automática** para imagens
+- **Firestore**: 50k leituras/dia + 20k escritas/dia
+- **GitHub Pages**: Ilimitado para repos públicos
 
-## 📜 Licença
+#### **Grupos de Atividades:**
+- **Grupo I**: Disciplinas (100h máximo)
+- **Grupo II**: Pesquisa (100h máximo)  
+- **Grupo III**: Extensão (100h máximo)
+- **Grupo IV**: Monitoria (100h máximo)
+- **Grupo V**: Vivência profissional (40h máximo)
+- **Grupo VI**: Outras atividades (100h máximo)
 
-Este sistema foi desenvolvido para fins educacionais e pode ser adaptado conforme necessário. 
+### 🧪 **Teste Local**
+
+```bash
+# Servidor local para teste
+python -m http.server 8000
+# Acesse: http://localhost:8000
+```
+
+### 🎯 **Próximos Passos**
+
+1. **Leia**: `GUIA_RAPIDO_GITHUB.md`
+2. **Configure**: Firebase Backend
+3. **Deploy**: GitHub Pages
+4. **Teste**: Sistema funcionando!
+
+---
+
+## 📞 **Suporte**
+
+- **Documentação**: `SOLUCAO_100_GRATUITA.md`
+- **Deploy rápido**: `GUIA_RAPIDO_GITHUB.md`
+- **Firebase Console**: https://console.firebase.google.com/
+- **GitHub Pages**: https://pages.github.com/
+
+---
+
+**🚀 Sistema profissional, gratuito e pronto para produção!** 
