@@ -289,6 +289,9 @@ async function handleLogin(e) {
     try {
         await signInWithEmailAndPassword(auth, email, password);
         showAlert('Login realizado com sucesso!', 'success');
+        // Ocultar telas e mostrar carregamento até onAuthStateChanged direcionar
+        hideAllScreens();
+        document.getElementById('loading-screen').classList.remove('d-none');
     } catch (error) {
         console.error('Erro no login:', error);
         showAlert(getErrorMessage(error.code), 'danger');
@@ -322,7 +325,7 @@ async function handleRegister(e) {
         // Enviar e-mail de verificação
         await sendEmailVerification(user);
         
-        showAlert('Conta criada com sucesso!', 'success');
+        showAlert('Conta criada com sucesso! Verifique seu e-mail antes de fazer login.', 'success');
         showLogin();
     } catch (error) {
         console.error('Erro no registro:', error);
