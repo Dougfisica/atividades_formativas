@@ -1,6 +1,4 @@
 // Configuração do Firebase
-// IMPORTANTE: Substitua pelos valores do seu projeto Firebase
-
 const firebaseConfig = {
   apiKey: "AIzaSyBkyMYpvmjBvhVUde-sjAXbUEfSZY6GrFw",
   authDomain: "afagricola-3680e.firebaseapp.com",
@@ -11,16 +9,5 @@ const firebaseConfig = {
   measurementId: "G-VW2PS0YZJM"
 };
 
-// Inicializar Firebase
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
-
-const app = initializeApp(firebaseConfig);
-
-// Exportar serviços Firebase
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-export const storage = getStorage(app);
-export default app; 
+// Não altere estas linhas
+export default firebaseConfig; 

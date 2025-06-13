@@ -33,12 +33,13 @@ import {
 // ============================================================================
 
 const firebaseConfig = {
-    apiKey: "SUA_API_KEY_AQUI",
-    authDomain: "SEU_PROJECT_ID.firebaseapp.com",
-    projectId: "SEU_PROJECT_ID",
-    storageBucket: "SEU_PROJECT_ID.appspot.com", // Não será usado
-    messagingSenderId: "SEU_MESSAGING_SENDER_ID",
-    appId: "SEU_APP_ID"
+  apiKey: "AIzaSyBkyMYpvmjBvhVUde-sjAXbUEfSZY6GrFw",
+  authDomain: "afagricola-3680e.firebaseapp.com",
+  projectId: "afagricola-3680e",
+  storageBucket: "afagricola-3680e.firebasestorage.app",
+  messagingSenderId: "396313868819",
+  appId: "1:396313868819:web:aad66219db855ea3d45de6",
+  measurementId: "G-VW2PS0YZJM"
 };
 
 // Inicializar Firebase (apenas Auth e Firestore)
