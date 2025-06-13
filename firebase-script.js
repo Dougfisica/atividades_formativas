@@ -300,7 +300,7 @@ async function handleRegister(e) {
     const name = document.getElementById('register-name').value.trim();
     const email = document.getElementById('register-email').value.trim();
     const password = document.getElementById('register-password').value;
-    const userType = document.getElementById('register-user-type').value;
+    const userType = document.getElementById('register-type').value;
     
     if (!name || !email || !password || !userType) {
         showAlert('Por favor, preencha todos os campos.', 'warning');
