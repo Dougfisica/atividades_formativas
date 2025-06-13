@@ -96,8 +96,8 @@ async function loadConfigData() {
         // Carregar atividades do Firestore
         const atividadesSnapshot = await getDocs(collection(db, 'atividades'));
         if (atividadesSnapshot.empty) {
-            // Se não existir, criar a partir do JSON local
-            await initializeConfigData();
+            // Se coleção vazia ou sem permissão de escrita -> usar JSON local
+            await loadLocalConfigData();
         } else {
             atividades = atividadesSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         }
@@ -105,15 +105,24 @@ async function loadConfigData() {
         // Carregar grupos do Firestore
         const gruposSnapshot = await getDocs(collection(db, 'grupos'));
         if (gruposSnapshot.empty) {
-            await initializeConfigData();
+            await loadLocalConfigData();
         } else {
             grupos = gruposSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         }
-        
+
         populateActivitySelect();
+
+        // Se usuário já autenticado, atualizar UI
+        if (currentUser && currentUserData && currentUserData.type === 'aluno') {
+            updateProgressDisplay();
+        }
     } catch (error) {
         console.error('Erro ao carregar dados de configuração:', error);
         await loadLocalConfigData();
+        // Atualizar UI após fallback
+        if (currentUser && currentUserData && currentUserData.type === 'aluno') {
+            updateProgressDisplay();
+        }
     }
 }
 
